@@ -383,7 +383,7 @@ public class TriggerPlayerListeners implements Listener {
             if (toMainWeapon != null) {
                 final ItemStack finalToMain = toMain;
                 WeaponMechanics.getInstance().getFoliaScheduler().entity(player).run(() -> {
-                    weaponHandler.tryUses(playerWrapper, toMainWeapon, finalToMain, EquipmentSlot.HAND, TriggerType.SWAP_HANDS, dualWield, null);
+                    weaponHandler.tryUses(playerWrapper, toMainWeapon, finalToMain, EquipmentSlot.OFF_HAND, TriggerType.SWAP_HANDS, dualWield, null);
                 });
             }
         }
